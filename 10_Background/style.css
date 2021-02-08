@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.card {
+  position: relative;
+  width: 840px;
+  height: 248px;
+}
+
+.card-image {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  width: 300px;
+  height: 200px;
+  background-image: url("./assets/img-house.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-content {
+  position: absolute;
+  top: 27px;
+  left: 348px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.plus-badge {
+  padding: 1px 8px;
+  margin-right: 8px;
+  background-color: #92174d;
+  border-radius: 4px;
+}
+
+.property-rate {
+  margin-left: auto;
+}
+
+.property-rate::before {
+  content: url("./assets/icon-star.svg");
+  width: 13.33px;
+  height: 12.67px;
+}
+
+.card-title {
+  margin-bottom: 16px;
+}
+
+.property div {
+  margin-bottom: 8px;
+}

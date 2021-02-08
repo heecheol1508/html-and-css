@@ -1,0 +1,48 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.fs-large {
+  font-size: 20px;
+}
+
+.fs-base {
+  font-size: 16px;
+}
+
+.fs-small {
+  font-size: 14px;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.lh-875 {
+  line-height: 0.875;
+}
+
+.lh-8 {
+  line-height: 0.8;
+}
+
+.lh-7 {
+  line-height: 0.7;
+}
+
+.lh-625 {
+  line-height: 0.625;
+}
+
+.text-gray {
+  color: #7d858f;
+}
+
+.text-dark {
+  color: #151b26;
+}
+
+.text-white {
+  color: #fff;
+}
