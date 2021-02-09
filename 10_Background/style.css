@@ -15,17 +15,17 @@
 }
 
 .card {
-  position: relative;
+  display: flex;
   width: 840px;
   height: 248px;
+  padding: 24px;
 }
 
 .card-image {
-  position: absolute;
-  top: 24px;
-  left: 24px;
+  position: relative;
   width: 300px;
   height: 200px;
+  margin-right: 24px;
   background-image: url("./assets/img-house.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,18 +33,31 @@
 }
 
 .like-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  background-image: url("./assets/icon-favorite.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  background-position: center center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .card-content {
-  position: absolute;
-  top: 27px;
-  left: 348px;
+  flex-grow: 1;
 }
 
 .card-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
 }
 
 .plus-badge {
@@ -52,16 +65,21 @@
   margin-right: 8px;
   background-color: #92174d;
   border-radius: 4px;
-}
-
-.property-rate {
-  margin-left: auto;
+  text-transform: uppercase;
 }
 
 .property-rate::before {
-  content: url("./assets/icon-star.svg");
-  width: 13.33px;
-  height: 12.67px;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 1.5px;
+  left: 2px;
+  background-image: url("./assets/icon-star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .card-title {
@@ -70,4 +88,14 @@
 
 .property div {
   margin-bottom: 8px;
+}
+
+.property-detail dd span::after {
+  content: "·";
+  margin: 0 5px;
+}
+
+.property-detail dd span:last-child::after {
+  content: "";
+  margin: 0;
 }
