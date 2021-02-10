@@ -1,0 +1,43 @@
+/* ▼ WHERE YOUR CODE BEGINS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f6f5f5;
+}
+
+button {
+  font-family: "Lato", sans-serif;
+  background-color: #fff;
+  border: none;
+}
+
+.line-button {
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.line-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0066ff;
+  transition: width 250ms ease-out;
+}
+
+.line-button:hover::after {
+  width: 100%;
+}
